@@ -1,0 +1,81 @@
+name: Deploy
+
+# ENG-1: deploy is gated on CI succeeding — this workflow only starts once
+# the CI workflow run on `main` has completed successfully. deploy/deploy.sh
+# (called below) is the actual deploy mechanism; see its own header comment
+# and docs/ops/DEPLOYMENT.md for the target hosting model.
+
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [main]
+
+jobs:
+  deploy-staging:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    environment: staging
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+
+      - name: Deploy to staging
+        run: ./deploy/deploy.sh staging
+        env:
+          DEPLOY_SSH_KEY: ${{ secrets.STAGING_DEPLOY_SSH_KEY }}
+          DEPLOY_HOST: ${{ vars.STAGING_DEPLOY_HOST }}
+          DEPLOY_PATH: ${{ vars.STAGING_DEPLOY_PATH }}
+
+  smoke-staging:
+    needs: deploy-staging
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+
+      - name: Install Playwright
+        working-directory: tests-e2e
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      # §3.2/§5.2: a staging smoke run of the same functional suite CI
+      # already ran locally, but against the real deployed staging
+      # environment — tagged @smoke so this stays fast, not a full re-run
+      # of every journey.
+      - name: Functional smoke suite against staging
+        working-directory: tests-e2e
+        run: npx playwright test --grep @smoke
+        env:
+          BASE_URL: ${{ vars.STAGING_URL }}
+
+  deploy-production:
+    needs: smoke-staging
+    runs-on: ubuntu-latest
+    # Requires manual approval — configure a required reviewer on the
+    # "production" environment in this repo's Settings → Environments.
+    # This is the manual approval gate §5's "Key properties" calls for.
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+
+      - name: Deploy to production
+        run: ./deploy/deploy.sh production
+        env:
+          DEPLOY_SSH_KEY: ${{ secrets.PRODUCTION_DEPLOY_SSH_KEY }}
+          DEPLOY_HOST: ${{ vars.PRODUCTION_DEPLOY_HOST }}
+          DEPLOY_PATH: ${{ vars.PRODUCTION_DEPLOY_PATH }}
