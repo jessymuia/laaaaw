@@ -356,11 +356,6 @@ parameters:
 			path: app/Http/Controllers/ExportController.php
 
 		-
-			message: "#^Method App\\\\Http\\\\Controllers\\\\ExportController\\:\\:fullFirmExport\\(\\) should return Illuminate\\\\Http\\\\JsonResponse\\|Symfony\\\\Component\\\\HttpFoundation\\\\StreamedResponse but returns Symfony\\\\Component\\\\HttpFoundation\\\\BinaryFileResponse\\.$#"
-			count: 1
-			path: app/Http/Controllers/ExportController.php
-
-		-
 			message: "#^Access to an undefined property App\\\\Models\\\\Hearing\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\Hearing\\>\\:\\:\\$deleted_by\\.$#"
 			count: 1
 			path: app/Http/Controllers/HearingController.php
