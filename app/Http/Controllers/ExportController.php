@@ -15,6 +15,7 @@ use Barryvdh\DomPDF\Facade\Pdf;
 use Carbon\Carbon;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Auth;
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
 class ExportController extends Controller
@@ -137,7 +138,7 @@ class ExportController extends Controller
      * regardless of creator) because its purpose is a complete backup/
      * extraction of the firm's data, not a personal work view.
      */
-    public function fullFirmExport(): StreamedResponse|JsonResponse
+    public function fullFirmExport(): BinaryFileResponse|JsonResponse
     {
         if (! Auth::user()->checkPermissionTo(ModulePermissions::EXPORT_FIRM_DATA)) {
             abort(403);
