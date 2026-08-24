@@ -1,0 +1,32 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/.idea
+/.vscode
+public/js/
+public/css
+public/mix-manifest.json
+
+# ENG-6: backup:run's default local destination (config/backup.php) —
+# these are generated backup artifacts, not source, and the whole point
+# of storing them outside storage/app is that they're a separate,
+# off-server concern in production (BACKUP_DISK=s3) — they don't belong
+# in version control either way.
+/storage/backups
+
+# tests-e2e is its own npm project (Playwright) with its own lockfile
+# and node_modules — keep it out of the main app's ignore-then-track
+# dance entirely.
+/tests-e2e/node_modules
+/tests-e2e/test-results
+/tests-e2e/playwright-report
+

@@ -1,0 +1,581 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Access to an undefined property App\\\\AppUtils\\\\DefaultAppModel\\:\\:\\$created_by\\.$#"
+			count: 1
+			path: app/AppUtils/DefaultAppModel.php
+
+		-
+			message: "#^Negated boolean expression is always false\\.$#"
+			count: 1
+			path: app/Console/Commands/AddNewPermission.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\AttorneyController\\:\\:create\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/AttorneyController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\AttorneyController\\:\\:destroy\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/AttorneyController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\AttorneyController\\:\\:edit\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/AttorneyController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\AttorneyController\\:\\:index\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/AttorneyController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\AttorneyController\\:\\:show\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/AttorneyController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\AttorneyController\\:\\:store\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/AttorneyController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\AttorneyController\\:\\:update\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/AttorneyController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\Cases\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\Cases\\>\\:\\:\\$deleted_by\\.$#"
+			count: 1
+			path: app/Http/Controllers/CasesController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\CasesController\\:\\:create\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/CasesController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\CasesController\\:\\:destroy\\(\\) should return Illuminate\\\\Http\\\\Response but returns Illuminate\\\\Http\\\\JsonResponse\\.$#"
+			count: 1
+			path: app/Http/Controllers/CasesController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\CasesController\\:\\:edit\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/CasesController.php
+
+		-
+			message: "#^PHPDoc tag @param references unknown parameter\\: \\$cases$#"
+			count: 3
+			path: app/Http/Controllers/CasesController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\Cases\\:\\:\\$created_at\\.$#"
+			count: 1
+			path: app/Http/Controllers/ClientController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\Client\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\Client\\>\\:\\:\\$created_at\\.$#"
+			count: 1
+			path: app/Http/Controllers/ClientController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\Client\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\Client\\>\\:\\:\\$deleted_by\\.$#"
+			count: 1
+			path: app/Http/Controllers/ClientController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\Client\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\Client\\>\\:\\:\\$updated_at\\.$#"
+			count: 1
+			path: app/Http/Controllers/ClientController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\ClientController\\:\\:create\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/ClientController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\ClientController\\:\\:destroy\\(\\) should return Illuminate\\\\Http\\\\Response but returns Illuminate\\\\Http\\\\JsonResponse\\.$#"
+			count: 1
+			path: app/Http/Controllers/ClientController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\ClientController\\:\\:edit\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/ClientController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\ClientController\\:\\:show\\(\\) should return Illuminate\\\\Http\\\\Response but returns Illuminate\\\\Http\\\\JsonResponse\\.$#"
+			count: 1
+			path: app/Http/Controllers/ClientController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\ClientController\\:\\:update\\(\\) should return Illuminate\\\\Http\\\\Response but returns Illuminate\\\\Http\\\\JsonResponse\\.$#"
+			count: 1
+			path: app/Http/Controllers/ClientController.php
+
+		-
+			message: "#^PHPDoc tag @param references unknown parameter\\: \\$client$#"
+			count: 3
+			path: app/Http/Controllers/ClientController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\Court\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\Court\\>\\:\\:\\$deleted_by\\.$#"
+			count: 1
+			path: app/Http/Controllers/CourtController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\Court\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\Court\\>\\:\\:\\$updated_by\\.$#"
+			count: 1
+			path: app/Http/Controllers/CourtController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\CourtController\\:\\:create\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/CourtController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\CourtController\\:\\:destroy\\(\\) should return Illuminate\\\\Http\\\\Response but returns Illuminate\\\\Http\\\\JsonResponse\\.$#"
+			count: 1
+			path: app/Http/Controllers/CourtController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\CourtController\\:\\:edit\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/CourtController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\CourtController\\:\\:show\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/CourtController.php
+
+		-
+			message: "#^PHPDoc tag @param references unknown parameter\\: \\$court$#"
+			count: 2
+			path: app/Http/Controllers/CourtController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\CourtType\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\CourtType\\>\\:\\:\\$deleted_by\\.$#"
+			count: 1
+			path: app/Http/Controllers/CourtTypeController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\CourtType\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\CourtType\\>\\:\\:\\$updated_by\\.$#"
+			count: 1
+			path: app/Http/Controllers/CourtTypeController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\CourtTypeController\\:\\:create\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/CourtTypeController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\CourtTypeController\\:\\:destroy\\(\\) should return Illuminate\\\\Http\\\\Response but returns Illuminate\\\\Http\\\\JsonResponse\\.$#"
+			count: 1
+			path: app/Http/Controllers/CourtTypeController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\CourtTypeController\\:\\:edit\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/CourtTypeController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\CourtTypeController\\:\\:show\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/CourtTypeController.php
+
+		-
+			message: "#^PHPDoc tag @param references unknown parameter\\: \\$courtType$#"
+			count: 2
+			path: app/Http/Controllers/CourtTypeController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\Cases\\:\\:\\$updated_at\\.$#"
+			count: 1
+			path: app/Http/Controllers/DashboardController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\DashboardController\\:\\:create\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/DashboardController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\DashboardController\\:\\:destroy\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/DashboardController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\DashboardController\\:\\:edit\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/DashboardController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\DashboardController\\:\\:show\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/DashboardController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\DashboardController\\:\\:store\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/DashboardController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\DashboardController\\:\\:update\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/DashboardController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\DocumentAccessController\\:\\:create\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/DocumentAccessController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\DocumentAccessController\\:\\:destroy\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/DocumentAccessController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\DocumentAccessController\\:\\:edit\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/DocumentAccessController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\DocumentAccessController\\:\\:index\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/DocumentAccessController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\DocumentAccessController\\:\\:show\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/DocumentAccessController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\DocumentAccessController\\:\\:store\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/DocumentAccessController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\DocumentAccessController\\:\\:update\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/DocumentAccessController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\Document\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\Document\\>\\:\\:\\$deleted_by\\.$#"
+			count: 1
+			path: app/Http/Controllers/DocumentController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\DocumentController\\:\\:create\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/DocumentController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\DocumentController\\:\\:edit\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/DocumentController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\DocumentController\\:\\:index\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/DocumentController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\DocumentController\\:\\:update\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/DocumentController.php
+
+		-
+			message: "#^PHPDoc tag @param references unknown parameter\\: \\$document$#"
+			count: 1
+			path: app/Http/Controllers/DocumentController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\ExpenseCategory\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\ExpenseCategory\\>\\:\\:\\$deleted_by\\.$#"
+			count: 1
+			path: app/Http/Controllers/ExpenseCategoryController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\ExpenseCategory\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\ExpenseCategory\\>\\:\\:\\$updated_by\\.$#"
+			count: 1
+			path: app/Http/Controllers/ExpenseCategoryController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\ExpenseCategoryController\\:\\:create\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/ExpenseCategoryController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\ExpenseCategoryController\\:\\:destroy\\(\\) should return Illuminate\\\\Http\\\\Response but returns Illuminate\\\\Http\\\\JsonResponse\\.$#"
+			count: 1
+			path: app/Http/Controllers/ExpenseCategoryController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\ExpenseCategoryController\\:\\:edit\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/ExpenseCategoryController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\ExpenseCategoryController\\:\\:show\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/ExpenseCategoryController.php
+
+		-
+			message: "#^PHPDoc tag @param references unknown parameter\\: \\$expenseCategory$#"
+			count: 2
+			path: app/Http/Controllers/ExpenseCategoryController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\Expense\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\Expense\\>\\:\\:\\$deleted_by\\.$#"
+			count: 1
+			path: app/Http/Controllers/ExpenseController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\ExpenseController\\:\\:create\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/ExpenseController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\ExpenseController\\:\\:destroy\\(\\) should return Illuminate\\\\Http\\\\Response but returns Illuminate\\\\Http\\\\JsonResponse\\.$#"
+			count: 1
+			path: app/Http/Controllers/ExpenseController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\ExpenseController\\:\\:edit\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/ExpenseController.php
+
+		-
+			message: "#^PHPDoc tag @param references unknown parameter\\: \\$expense$#"
+			count: 3
+			path: app/Http/Controllers/ExpenseController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\Invoice\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\Invoice\\>\\:\\:\\$created_by\\.$#"
+			count: 1
+			path: app/Http/Controllers/ExportController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\ExportController\\:\\:fullFirmExport\\(\\) should return Illuminate\\\\Http\\\\JsonResponse\\|Symfony\\\\Component\\\\HttpFoundation\\\\StreamedResponse but returns Symfony\\\\Component\\\\HttpFoundation\\\\BinaryFileResponse\\.$#"
+			count: 1
+			path: app/Http/Controllers/ExportController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\Hearing\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\Hearing\\>\\:\\:\\$deleted_by\\.$#"
+			count: 1
+			path: app/Http/Controllers/HearingController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\HearingController\\:\\:create\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/HearingController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\HearingController\\:\\:destroy\\(\\) should return Illuminate\\\\Http\\\\Response but returns Illuminate\\\\Http\\\\JsonResponse\\.$#"
+			count: 1
+			path: app/Http/Controllers/HearingController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\HearingController\\:\\:edit\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/HearingController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\HearingController\\:\\:show\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/HearingController.php
+
+		-
+			message: "#^PHPDoc tag @param references unknown parameter\\: \\$hearing$#"
+			count: 2
+			path: app/Http/Controllers/HearingController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\HearingType\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\HearingType\\>\\:\\:\\$deleted_by\\.$#"
+			count: 1
+			path: app/Http/Controllers/HearingTypeController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\HearingType\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\HearingType\\>\\:\\:\\$updated_by\\.$#"
+			count: 1
+			path: app/Http/Controllers/HearingTypeController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\HearingTypeController\\:\\:create\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/HearingTypeController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\HearingTypeController\\:\\:destroy\\(\\) should return Illuminate\\\\Http\\\\Response but returns Illuminate\\\\Http\\\\JsonResponse\\.$#"
+			count: 1
+			path: app/Http/Controllers/HearingTypeController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\HearingTypeController\\:\\:edit\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/HearingTypeController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\HearingTypeController\\:\\:show\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/HearingTypeController.php
+
+		-
+			message: "#^PHPDoc tag @param references unknown parameter\\: \\$hearingType$#"
+			count: 2
+			path: app/Http/Controllers/HearingTypeController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\Invoice\\:\\:\\$created_by\\.$#"
+			count: 1
+			path: app/Http/Controllers/InvoiceController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\Invoice\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\Invoice\\>\\:\\:\\$created_by\\.$#"
+			count: 5
+			path: app/Http/Controllers/InvoiceController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\Invoice\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\Invoice\\>\\:\\:\\$deleted_by\\.$#"
+			count: 1
+			path: app/Http/Controllers/InvoiceController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\InvoiceController\\:\\:create\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/InvoiceController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\InvoiceController\\:\\:edit\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/InvoiceController.php
+
+		-
+			message: "#^PHPDoc tag @param references unknown parameter\\: \\$invoice$#"
+			count: 3
+			path: app/Http/Controllers/InvoiceController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\InvoiceItem\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\InvoiceItem\\>\\:\\:\\$deleted_by\\.$#"
+			count: 1
+			path: app/Http/Controllers/InvoiceItemController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\InvoiceItemController\\:\\:create\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/InvoiceItemController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\InvoiceItemController\\:\\:edit\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/InvoiceItemController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\InvoiceItemController\\:\\:index\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/InvoiceItemController.php
+
+		-
+			message: "#^PHPDoc tag @param references unknown parameter\\: \\$invoiceItem$#"
+			count: 3
+			path: app/Http/Controllers/InvoiceItemController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\Payment\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\Payment\\>\\:\\:\\$deleted_by\\.$#"
+			count: 1
+			path: app/Http/Controllers/PaymentController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\Task\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\Task\\>\\:\\:\\$deleted_by\\.$#"
+			count: 1
+			path: app/Http/Controllers/TaskController.php
+
+		-
+			message: "#^If condition is always true\\.$#"
+			count: 1
+			path: app/Http/Controllers/TaskController.php
+
+		-
+			message: "#^Left side of && is always true\\.$#"
+			count: 1
+			path: app/Http/Controllers/TaskController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\TaskController\\:\\:create\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/TaskController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\TaskController\\:\\:destroy\\(\\) should return Illuminate\\\\Http\\\\Response but returns Illuminate\\\\Http\\\\JsonResponse\\.$#"
+			count: 1
+			path: app/Http/Controllers/TaskController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\TaskController\\:\\:edit\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/TaskController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\TaskController\\:\\:show\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/TaskController.php
+
+		-
+			message: "#^PHPDoc tag @param references unknown parameter\\: \\$task$#"
+			count: 2
+			path: app/Http/Controllers/TaskController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\TimeEntry\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\TimeEntry\\>\\:\\:\\$deleted_by\\.$#"
+			count: 1
+			path: app/Http/Controllers/TimeEntryController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\TrustTransaction\\|Illuminate\\\\Database\\\\Eloquent\\\\Collection\\<int, App\\\\Models\\\\TrustTransaction\\>\\:\\:\\$updated_by\\.$#"
+			count: 1
+			path: app/Http/Controllers/TrustTransactionController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\UserController\\:\\:create\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/UserController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\UserController\\:\\:destroy\\(\\) should return Illuminate\\\\Http\\\\Response but returns Illuminate\\\\Http\\\\JsonResponse\\.$#"
+			count: 2
+			path: app/Http/Controllers/UserController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\UserController\\:\\:edit\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/UserController.php
+
+		-
+			message: "#^Method App\\\\Http\\\\Controllers\\\\UserController\\:\\:show\\(\\) should return Illuminate\\\\Http\\\\Response but return statement is missing\\.$#"
+			count: 1
+			path: app/Http/Controllers/UserController.php
+
+		-
+			message: "#^Offset 'appeal'\\|'closed'\\|'open'\\|'settled' on array\\{open\\: array\\{'closed', 'appeal', 'settled'\\}, appeal\\: array\\{'open', 'settled', 'closed'\\}, closed\\: array\\{'open'\\}, settled\\: array\\{\\}\\} on left side of \\?\\? always exists and is not nullable\\.$#"
+			count: 1
+			path: app/Models/Cases.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\InvoiceItem\\:\\:\\$subtotal\\.$#"
+			count: 1
+			path: app/Models/Invoice.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\InvoiceItem\\:\\:\\$tax_total\\.$#"
+			count: 1
+			path: app/Models/Invoice.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function str_pad expects string, \\(float\\|int\\) given\\.$#"
+			count: 1
+			path: app/Models/Invoice.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function str_pad expects string, \\(float\\|int\\) given\\.$#"
+			count: 1
+			path: app/Models/Payment.php
